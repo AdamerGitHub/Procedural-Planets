@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e76a6805f4399be49a3b359de9a5ba83, type: 3}
+  m_Name: Shape
+  m_EditorClassIdentifier: 
+  planetRadius: 3
+  noiseLayers:
+  - enabled: 1
+    useFirstLayerMask: 0
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.05
+        numLayers: 8
+        baseRoughness: 0.17
+        roughness: 1.42
+        persistance: 0.76
+        centre: {x: 2.59, y: 0, z: 0}
+        minValue: 2.33
+      ridgidNoiseSettings:
+        strength: 1
+        numLayers: 1
+        baseRoughness: 1
+        roughness: 2
+        persistance: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 6.99
+        weightMultiplier: 1.03
+  - enabled: 1
+    useFirstLayerMask: 1
+    noiseSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        strength: 1
+        numLayers: 1
+        baseRoughness: 1
+        roughness: 2
+        persistance: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+      ridgidNoiseSettings:
+        strength: 2.06
+        numLayers: 7
+        baseRoughness: 2.3
+        roughness: 3.26
+        persistance: 0.45
+        centre: {x: 0, y: 0, z: 0}
+        minValue: -1.07
+        weightMultiplier: 0.56
